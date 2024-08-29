@@ -13,7 +13,7 @@ if(lengthHacker1>lengthHacker2){
     console.log(`The driver has the longest name, it has ${lengthHacker1} characters.`)
     
      }
-    if(lengthHacker1<lengthHacker2){
+    else if(lengthHacker1<lengthHacker2){
         console.log(` It seems that the navigator has the longest name, it has ${lengthHacker2} characters.`)
     
     }else{
@@ -26,10 +26,10 @@ let result1 = "";
 for(let count1 = 0; count1<hacker1.length; count1++){
     result1 +=hacker1[count1]+" ";
 }
-  console.log(result1)
+  console.log(result1.trim())
 
   let result2 = "";
   for(let lastLetter = hacker2.length-1;0<= lastLetter; lastLetter--){
-    result2 += hacker2[lastLetter]
+    result2 += hacker2[lastLetter];
 }
 console.log(result2)
